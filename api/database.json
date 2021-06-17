@@ -1,0 +1,15 @@
+{
+    "clowns": [],
+    "confirmedParties": [],
+    "requestedParties": [
+        {
+            "id": 1,
+            "parent": "Sally Mae",
+            "child": "Tim Cook",
+            "numOfChildren": 7,
+            "address": "42 wallaby way",
+            "partyDate": 11.20,
+            "partyHrs": 3
+        }
+    ]
+}
