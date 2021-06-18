@@ -1,4 +1,4 @@
-import { getPartyOrders } from "./dataAccess.js"
+import { getPartyOrders, deleteRequest } from "./dataAccess.js"
 
 export const partyOrder = () => {
     const requestedParties = getPartyOrders() 
@@ -12,11 +12,21 @@ export const partyOrder = () => {
                             ${requestedParty.partyDate}
                             <button class="request__delete"
                                     id="request--${requestedParty.id}">
-                                Delete
+                                Deny
                             </button>
                         </li>
                     `
-                })
+                }).join("")
             }`
     return html
     }
+
+
+const mainContainer = document.querySelector("#container")
+
+mainContainer.addEventListener("click", click => {
+    if (click.target.id.startsWith("request--")) {
+        const [,requestId] = click.target.id.split("--")
+        deleteRequest(parseInt(requestId))
+    }
+})
