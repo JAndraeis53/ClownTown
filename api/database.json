@@ -1,15 +1,33 @@
 {
-    "clowns": [],
-    "confirmedParties": [],
-    "requestedParties": [
-        {
-            "id": 1,
-            "parent": "Sally Mae",
-            "child": "Tim Cook",
-            "numOfChildren": 7,
-            "address": "42 wallaby way",
-            "partyDate": 11.20,
-            "partyHrs": 3
-        }
-    ]
+  "clowns": [],
+  "confirmedParties": [],
+  "requestedParties": [
+    {
+      "id": 1,
+      "parent": "Sally Mae",
+      "child": "Tim Cook",
+      "numOfChildren": 7,
+      "address": "42 wallaby way",
+      "partyDate": 11.2,
+      "partyHrs": 3
+    },
+    {
+      "parent": "mary",
+      "child": "harry",
+      "numOfChildren": "2",
+      "address": "892 lake lane",
+      "partyDate": "2021-05-04",
+      "partyHrs": "2",
+      "id": 2
+    },
+    {
+      "parent": "Terry",
+      "child": "macy",
+      "numOfChildren": "67",
+      "address": "123mulbery lane",
+      "partyDate": "2021-07-07",
+      "partyHrs": "122",
+      "id": 3
+    }
+  ]
 }
